@@ -10,7 +10,11 @@ App({
     wx.login({
       success: res => {
         this.globalData.code = res.code
+<<<<<<< HEAD
         // 请求 2019/05/09
+=======
+        // 请求 2019/05/08 
+>>>>>>> dcc4a730647c8e2afc5e08a9712355e372e0e9b3
         wx.getUserInfo({
           success: res => {
             this.globalData.encryptedData = encodeURIComponent(res.encryptedData)
